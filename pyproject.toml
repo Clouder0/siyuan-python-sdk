@@ -1,0 +1,19 @@
+[project]
+name = "siyuansdk"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+siyuancli = "siyuansdk.cli:main"
+
+[tool.uv]
+package = true
+dev-dependencies = [
+    "nox>=2024.10.9",
+    "pytest>=8.3.3",
+    "ruff>=0.7.0",
+    "rust-just>=1.36.0",
+]
